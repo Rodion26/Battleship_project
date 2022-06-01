@@ -1,0 +1,72 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/HUD/validacion1.gd" type="Script" id=2]
+[ext_resource path="res://assets/HUD/Roboto-Black.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+font_data = ExtResource( 3 )
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = -7.0
+margin_top = 16.0
+margin_right = 153.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 1 )
+text = "Ingrese las 
+coordenadas 
+de sus barcos"
+align = 1
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 7.0
+margin_top = 80.0
+margin_right = 57.0
+margin_bottom = 96.0
+custom_fonts/font = SubResource( 1 )
+text = "Barco 1:"
+align = 1
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 5.0
+margin_top = 100.0
+margin_right = 63.0
+margin_bottom = 124.0
+text = "Filas"
+align = 1
+script = ExtResource( 2 )
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+margin_left = 71.0
+margin_top = 100.0
+margin_right = 129.0
+margin_bottom = 124.0
+text = "columnas"
+align = 1
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 7.0
+margin_top = 137.0
+margin_right = 57.0
+margin_bottom = 153.0
+custom_fonts/font = SubResource( 1 )
+text = "Barco 2:"
+align = 1
+
+[node name="LineEdit3" type="LineEdit" parent="."]
+margin_left = 4.0
+margin_top = 156.0
+margin_right = 62.0
+margin_bottom = 180.0
+text = "Filas"
+align = 1
+
+[node name="LineEdit4" type="LineEdit" parent="."]
+margin_left = 71.0
+margin_top = 157.0
+margin_right = 129.0
+margin_bottom = 181.0
+text = "columnas"
+align = 1

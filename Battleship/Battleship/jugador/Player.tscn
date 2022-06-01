@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://barco1.png" type="Texture" id=1]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "vista por arriba.",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 113, 44.5 )
+
+[node name="Player" type="Area2D"]
+position = Vector2( 207, 99 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 106, 16 )
+scale = Vector2( 0.397152, 0.506198 )
+frames = SubResource( 1 )
+animation = "vista por arriba."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( -24, -14 )
+shape = SubResource( 2 )
