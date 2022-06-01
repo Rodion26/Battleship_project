@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/Prokofiev - Dance of the Knights (152kbit_Opus) (online-audio-converter.com).mp3" type="AudioStream" id=1]
 [ext_resource path="res://assets/Menu/sprites/fondo2.1.png" type="Texture" id=2]
+[ext_resource path="res://assets/Menu/menu.gd" type="Script" id=3]
 [ext_resource path="res://assets/Menu/FONTS/nokiafc22.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://assets/Menu/FONTS/style_bottom.tres" type="DynamicFont" id=5]
 
@@ -29,14 +30,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -2.0
 margin_right = -2.0
+script = ExtResource( 3 )
 
 [node name="DanceKmusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
 volume_db = -10.0
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 74.5534, 128 )
-scale = Vector2( 0.288632, 0.355245 )
+position = Vector2( 73.7767, 128 )
+scale = Vector2( 0.287742, 0.358042 )
 texture = ExtResource( 2 )
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
@@ -57,26 +59,28 @@ text = "Developed for Proyecto Algoritmos"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -20.5
-margin_top = 42.0
-margin_right = 20.5
-margin_bottom = 86.0
+anchor_bottom = 1.0
+margin_left = -22.0
+margin_top = -86.0
+margin_right = 26.0
+margin_bottom = -40.0
 
 [node name="Start" type="Button" parent="VBoxContainer2"]
-margin_right = 47.0
+margin_right = 48.0
 margin_bottom = 20.0
 custom_colors/font_color_disabled = Color( 0.956863, 0.937255, 0.937255, 1 )
+custom_colors/font_color_hover = Color( 0.858824, 0.776471, 0.329412, 1 )
 custom_fonts/font = ExtResource( 5 )
 text = "Start"
 flat = true
 
 [node name="Exit" type="Button" parent="VBoxContainer2"]
 margin_top = 24.0
-margin_right = 47.0
+margin_right = 48.0
 margin_bottom = 44.0
+custom_colors/font_color_hover = Color( 0.858824, 0.776471, 0.329412, 1 )
 custom_fonts/font = ExtResource( 5 )
 text = "Exit"
 flat = true
@@ -104,3 +108,6 @@ custom_colors/font_color = Color( 0.945098, 0.905882, 0.905882, 1 )
 custom_fonts/font = SubResource( 2 )
 text = "BATTLESHIP"
 align = 1
+
+[connection signal="pressed" from="VBoxContainer2/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Exit" to="." method="_on_Exit_pressed"]
