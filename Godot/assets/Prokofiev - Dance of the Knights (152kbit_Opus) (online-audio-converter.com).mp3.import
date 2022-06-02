@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Prokofiev - Dance of the Knights (152kbit_Opus) (online-audio-converter.com).mp3-f83adf2de4b0c3ba94c796634e3ea0d8.mp3str"
+
+[deps]
+
+source_file="res://assets/Prokofiev - Dance of the Knights (152kbit_Opus) (online-audio-converter.com).mp3"
+dest_files=[ "res://.import/Prokofiev - Dance of the Knights (152kbit_Opus) (online-audio-converter.com).mp3-f83adf2de4b0c3ba94c796634e3ea0d8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

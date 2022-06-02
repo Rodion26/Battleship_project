@@ -1,0 +1,98 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/HUD/Roboto-Black.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+font_data = ExtResource( 3 )
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = -7.0
+margin_top = 7.0
+margin_right = 153.0
+margin_bottom = 46.0
+custom_fonts/font = SubResource( 1 )
+text = "Ingrese las coordenadas 
+de sus barcos"
+align = 1
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 7.0
+margin_top = 56.0
+margin_right = 57.0
+margin_bottom = 72.0
+custom_fonts/font = SubResource( 1 )
+text = "Barco 1:"
+align = 1
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 7.0
+margin_top = 107.0
+margin_right = 57.0
+margin_bottom = 123.0
+custom_fonts/font = SubResource( 1 )
+text = "Barco 2:"
+align = 1
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 7.0
+margin_top = 160.0
+margin_right = 57.0
+margin_bottom = 176.0
+custom_fonts/font = SubResource( 1 )
+text = "Barco 3:"
+align = 1
+
+[node name="ItemList" type="ItemList" parent="."]
+margin_left = 3.0
+margin_top = 74.0
+margin_right = 53.0
+margin_bottom = 97.0
+items = [ "Fila 1", null, false, "Fila 2", null, false, "Fila 3", null, false, "Fila 4", null, false, "Fila 5", null, false ]
+
+[node name="ItemList2" type="ItemList" parent="."]
+margin_left = 57.0
+margin_top = 74.0
+margin_right = 140.0
+margin_bottom = 97.0
+items = [ "Columna 1", null, false, "Columna 2", null, false, "Columna 3", null, false, "Columna 4", null, false, "Columna 5", null, false ]
+
+[node name="ItemList3" type="ItemList" parent="."]
+margin_left = 3.0
+margin_top = 126.0
+margin_right = 53.0
+margin_bottom = 149.0
+items = [ "Fila 1", null, false, "Fila 2", null, false, "Fila 3", null, false, "Fila 4", null, false, "Fila 5", null, false ]
+
+[node name="ItemList4" type="ItemList" parent="."]
+margin_left = 57.0
+margin_top = 126.0
+margin_right = 140.0
+margin_bottom = 149.0
+items = [ "Columna 1", null, false, "Columna 2", null, false, "Columna 3", null, false, "Columna 4", null, false, "Columna 5", null, false ]
+
+[node name="ItemList5" type="ItemList" parent="."]
+margin_left = 3.0
+margin_top = 180.0
+margin_right = 53.0
+margin_bottom = 203.0
+items = [ "Fila 1", null, false, "Fila 2", null, false, "Fila 3", null, false, "Fila 4", null, false, "Fila 5", null, false ]
+
+[node name="ItemList6" type="ItemList" parent="."]
+margin_left = 57.0
+margin_top = 180.0
+margin_right = 140.0
+margin_bottom = 203.0
+items = [ "Columna 1", null, false, "Columna 2", null, false, "Columna 3", null, false, "Columna 4", null, false, "Columna 5", null, false ]
+
+[node name="Button" type="Button" parent="."]
+margin_left = 43.0
+margin_top = 221.0
+margin_right = 103.0
+margin_bottom = 241.0
+text = "Aceptar"
+__meta__ = {
+"_editor_description_": ""
+}
