@@ -1,0 +1,97 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/HUD/Roboto-Black.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/HUD/Roboto-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/HUD/Coordenadas1.gd" type="Script" id=3]
+[ext_resource path="res://assets/HUD/F1.tscn" type="PackedScene" id=4]
+
+[sub_resource type="DynamicFont" id=4]
+size = 14
+extra_spacing_char = 1
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 13
+outline_size = 1
+outline_color = Color( 0.329412, 0.305882, 0.305882, 1 )
+extra_spacing_char = 1
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 13
+outline_size = 1
+outline_color = Color( 0.329412, 0.305882, 0.305882, 1 )
+extra_spacing_char = 1
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+margin_right = 146.0
+margin_bottom = 251.0
+script = ExtResource( 3 )
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -35.0
+margin_top = -31.0
+margin_right = 33.0
+margin_bottom = -8.0
+custom_fonts/font = SubResource( 4 )
+text = "Aceptar"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="C3" type="ItemList" parent="."]
+margin_left = 76.0
+margin_top = 180.0
+margin_right = 138.0
+margin_bottom = 205.0
+custom_fonts/font = SubResource( 3 )
+items = [ "Col 1", null, false, "Col 2", null, false, "Col 3", null, false, "Col 4", null, false, "Col 5", null, false ]
+
+[node name="C2" type="ItemList" parent="."]
+margin_left = 75.0
+margin_top = 125.0
+margin_right = 137.0
+margin_bottom = 150.0
+custom_fonts/font = SubResource( 3 )
+items = [ "Col 1", null, false, "Col 2", null, false, "Col 3", null, false, "Col 4", null, false, "Col 5", null, false ]
+
+[node name="C1" type="ItemList" parent="."]
+margin_left = 75.0
+margin_top = 74.0
+margin_right = 137.0
+margin_bottom = 99.0
+custom_fonts/font = SubResource( 3 )
+items = [ "Col 1", null, false, "Col 2", null, false, "Col 3", null, false, "Col 4", null, false, "Col 5", null, false ]
+
+[node name="F3" type="ItemList" parent="."]
+margin_left = 3.0
+margin_top = 180.0
+margin_right = 65.0
+margin_bottom = 205.0
+custom_fonts/font = SubResource( 2 )
+items = [ "Fila 1", null, false, "Fila 2", null, false, "Fila 3", null, false, "Fila 4", null, false, "Fila 5", null, false ]
+
+[node name="F2" type="ItemList" parent="."]
+margin_left = 3.0
+margin_top = 125.0
+margin_right = 65.0
+margin_bottom = 150.0
+custom_fonts/font = SubResource( 2 )
+items = [ "Fila 1", null, false, "Fila 2", null, false, "Fila 3", null, false, "Fila 4", null, false, "Fila 5", null, false ]
+
+[node name="F1" parent="." instance=ExtResource( 4 )]
+items = [ "Fila 1", null, false, "Fila 2", null, false, "Fila 3", null, false, "Fila 4", null, false, "Fila 5", null, false ]
+allow_rmb_select = true
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="item_selected" from="C3" to="." method="_on_C3_item_selected"]
+[connection signal="item_selected" from="C2" to="." method="_on_C2_item_selected"]
+[connection signal="item_selected" from="C1" to="." method="_on_C1_item_selected"]
+[connection signal="item_selected" from="F3" to="." method="_on_F3_item_selected"]
+[connection signal="item_selected" from="F2" to="." method="_on_F2_item_selected"]
+[connection signal="item_selected" from="F1" to="." method="_on_F1_item_selected"]

@@ -1,0 +1,102 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/level/level_3_1.gd" type="Script" id=1]
+[ext_resource path="res://jugador/ship-boat-svgrepo-com.svg" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 11.0
+margin_top = 95.0
+margin_right = 384.0
+margin_bottom = 510.0
+rect_scale = Vector2( 0.325785, 0.345017 )
+
+[node name="Linea1H" type="Line2D" parent="VBoxContainer"]
+position = Vector2( -77.0261, -35.8523 )
+rotation = 1.57079
+points = PoolVector2Array( 41.8333, -86.8365, 41.8333, -439.612, 41.391, -439.22 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea2H" type="Line2D" parent="VBoxContainer"]
+position = Vector2( -77.026, 44.148 )
+rotation = 1.5708
+points = PoolVector2Array( 41.8333, -86.8365, 41.8333, -439.612, 41.391, -439.22 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea3H" type="Line2D" parent="VBoxContainer"]
+position = Vector2( -77.026, 124.148 )
+rotation = 1.5708
+points = PoolVector2Array( 41.8333, -86.8365, 41.8333, -439.612, 41.391, -439.22 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea4H" type="Line2D" parent="VBoxContainer"]
+position = Vector2( -77.026, 205.852 )
+rotation = 1.5708
+points = PoolVector2Array( 41.8333, -86.8365, 41.8333, -439.612, 41.391, -439.22 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea5H" type="Line2D" parent="VBoxContainer"]
+position = Vector2( -77.026, 285.852 )
+rotation = 1.5708
+points = PoolVector2Array( 41.8333, -86.8365, 41.8333, -439.612, 41.391, -439.22 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea6H" type="Line2D" parent="VBoxContainer"]
+position = Vector2( -77.026, 364.852 )
+rotation = 1.5708
+points = PoolVector2Array( 41.8333, -86.8365, 41.8333, -439.612, 41.391, -439.22 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea1V" type="Line2D" parent="VBoxContainer"]
+position = Vector2( 320, 557.369 )
+points = PoolVector2Array( 41.8333, -150.461, 41.8333, -551.832 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea2V" type="Line2D" parent="VBoxContainer"]
+position = Vector2( 250, 557.369 )
+points = PoolVector2Array( 41.8333, -150.461, 41.8333, -551.832 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea3V" type="Line2D" parent="VBoxContainer"]
+position = Vector2( 180, 557.369 )
+points = PoolVector2Array( 41.8333, -151.203, 41.8333, -551.832 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea4V" type="Line2D" parent="VBoxContainer"]
+position = Vector2( 110, 557.369 )
+points = PoolVector2Array( 41.8333, -151.203, 41.8333, -551.832 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea5V" type="Line2D" parent="VBoxContainer"]
+position = Vector2( 40, 557.369 )
+points = PoolVector2Array( 41.8333, -151.263, 41.8333, -551.832 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea6V" type="Line2D" parent="VBoxContainer"]
+position = Vector2( -30, 557.369 )
+points = PoolVector2Array( 41.8333, -152.302, 41.8333, -551.832 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="barco1" type="Sprite" parent="."]
+position = Vector2( 26, 111 )
+rotation = 4.71239
+scale = Vector2( 0.0411794, 0.0355727 )
+texture = ExtResource( 2 )

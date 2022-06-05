@@ -17,7 +17,7 @@ func _ready():
 
 
 func _on_Start_pressed():
-	get_tree().change_scene("res://assets/level/level.tscn")
+	get_tree().change_scene("res://assets/HUD/CanvasLayer.tscn")
 
 
 func _on_Exit_pressed(): #Función en donde se asigna el método ded salida del boton exit

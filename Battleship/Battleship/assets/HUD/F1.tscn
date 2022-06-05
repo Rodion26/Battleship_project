@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/HUD/Roboto-Regular.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 13
+outline_size = 1
+outline_color = Color( 0.329412, 0.305882, 0.305882, 1 )
+extra_spacing_char = 1
+font_data = ExtResource( 1 )
+
+[node name="F1" type="ItemList"]
+margin_left = 2.0
+margin_top = 74.0
+margin_right = 64.0
+margin_bottom = 99.0
+custom_fonts/font = SubResource( 2 )
+items = [ "Fila 1", null, false, "Fila 2", null, false, "Fila 3", null, false, "Fila 4", null, false, "Fila 5", null, false ]

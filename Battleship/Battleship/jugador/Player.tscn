@@ -17,7 +17,7 @@ extents = Vector2( 113, 44.5 )
 position = Vector2( 207, 99 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 106, 16 )
+position = Vector2( -123, 18 )
 scale = Vector2( 0.397152, 0.506198 )
 frames = SubResource( 1 )
 animation = "vista por arriba."

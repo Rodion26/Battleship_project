@@ -1,0 +1,620 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://barco_lv3.gd" type="Script" id=1]
+[ext_resource path="res://jugador/ship-boat-svgrepo-com.svg" type="Texture" id=2]
+[ext_resource path="res://assets/level/level_3.gd" type="Script" id=3]
+[ext_resource path="res://jugador/pirate-ship-2028574_640.png" type="Texture" id=4]
+[ext_resource path="res://assets/HUD/Roboto-Regular.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://assets/HUD/Roboto-Black.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://hook-1727484_640.png" type="Texture" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 246.336, 146.581 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 15
+outline_size = 1
+outline_color = Color( 0.772549, 0.729412, 0.729412, 1 )
+extra_spacing_top = 1
+extra_spacing_bottom = 1
+extra_spacing_char = 1
+extra_spacing_space = 2
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 14
+extra_spacing_char = 1
+font_data = ExtResource( 6 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="player1" type="KinematicBody2D" parent="."]
+position = Vector2( 28, 56 )
+rotation = -1.5708
+scale = Vector2( 0.0466842, 0.0423786 )
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player1"]
+position = Vector2( 0.000488281, 94.3873 )
+rotation = 7.10543e-15
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="player1"]
+position = Vector2( 21.4204, 23.597 )
+rotation = 3.55271e-15
+texture = ExtResource( 2 )
+
+[node name="visto1" type="Sprite" parent="."]
+position = Vector2( -11, 15 )
+scale = Vector2( 0.0142933, 0.0134612 )
+texture = ExtResource( 7 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 11.0
+margin_top = 95.0
+margin_right = 384.0
+margin_bottom = 510.0
+rect_scale = Vector2( 0.325785, 0.345017 )
+
+[node name="Linea1H" type="Line2D" parent="VBoxContainer"]
+position = Vector2( -77.0261, -35.8523 )
+rotation = 1.57079
+points = PoolVector2Array( 41.8333, -86.8365, 41.8333, -439.612, 41.391, -439.22 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea2H" type="Line2D" parent="VBoxContainer"]
+position = Vector2( -77.026, 44.148 )
+rotation = 1.5708
+points = PoolVector2Array( 41.8333, -86.8365, 41.8333, -439.612, 41.391, -439.22 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea3H" type="Line2D" parent="VBoxContainer"]
+position = Vector2( -77.026, 124.148 )
+rotation = 1.5708
+points = PoolVector2Array( 41.8333, -86.8365, 41.8333, -439.612, 41.391, -439.22 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea4H" type="Line2D" parent="VBoxContainer"]
+position = Vector2( -77.026, 205.852 )
+rotation = 1.5708
+points = PoolVector2Array( 41.8333, -86.8365, 41.8333, -439.612, 41.391, -439.22 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea5H" type="Line2D" parent="VBoxContainer"]
+position = Vector2( -77.026, 285.852 )
+rotation = 1.5708
+points = PoolVector2Array( 41.8333, -86.8365, 41.8333, -439.612, 41.391, -439.22 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea6H" type="Line2D" parent="VBoxContainer"]
+position = Vector2( -77.026, 364.852 )
+rotation = 1.5708
+points = PoolVector2Array( 41.8333, -86.8365, 41.8333, -439.612, 41.391, -439.22 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea1V" type="Line2D" parent="VBoxContainer"]
+position = Vector2( 320, 557.369 )
+points = PoolVector2Array( 41.8333, -150.461, 41.8333, -551.832 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea2V" type="Line2D" parent="VBoxContainer"]
+position = Vector2( 250, 557.369 )
+points = PoolVector2Array( 41.8333, -150.461, 41.8333, -551.832 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea3V" type="Line2D" parent="VBoxContainer"]
+position = Vector2( 180, 557.369 )
+points = PoolVector2Array( 41.8333, -151.203, 41.8333, -551.832 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea4V" type="Line2D" parent="VBoxContainer"]
+position = Vector2( 110, 557.369 )
+points = PoolVector2Array( 41.8333, -151.203, 41.8333, -551.832 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea5V" type="Line2D" parent="VBoxContainer"]
+position = Vector2( 40, 557.369 )
+points = PoolVector2Array( 41.8333, -151.263, 41.8333, -551.832 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="Linea6V" type="Line2D" parent="VBoxContainer"]
+position = Vector2( -30, 557.369 )
+points = PoolVector2Array( 41.8333, -152.302, 41.8333, -551.832 )
+width = 4.0
+default_color = Color( 0.0627451, 0.113725, 0.380392, 1 )
+
+[node name="F1C1" type="Button" parent="."]
+margin_left = 16.0
+margin_top = 107.0
+margin_right = 86.0
+margin_bottom = 133.0
+rect_scale = Vector2( 0.294881, 0.339452 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F1C1"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F1C2" type="Button" parent="."]
+margin_left = 40.0
+margin_top = 107.0
+margin_right = 110.0
+margin_bottom = 133.0
+rect_scale = Vector2( 0.27421, 0.319017 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F1C2"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F3C1" type="Button" parent="."]
+margin_left = 15.9001
+margin_top = 160.001
+margin_right = 85.9001
+margin_bottom = 186.001
+rect_scale = Vector2( 0.287412, 0.34346 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F3C1"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F4C1" type="Button" parent="."]
+margin_left = 15.9001
+margin_top = 188.001
+margin_right = 85.9001
+margin_bottom = 214.001
+rect_scale = Vector2( 0.286203, 0.33462 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F4C1"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F5C1" type="Button" parent="."]
+margin_left = 15.9001
+margin_top = 216.001
+margin_right = 85.9001
+margin_bottom = 242.001
+rect_scale = Vector2( 0.284459, 0.334182 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F5C1"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F2C1" type="Button" parent="."]
+margin_left = 15.9001
+margin_top = 134.0
+margin_right = 85.9001
+margin_bottom = 160.0
+rect_scale = Vector2( 0.293576, 0.356011 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F2C1"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F2C2" type="Button" parent="."]
+margin_left = 39.1005
+margin_top = 134.5
+margin_right = 109.101
+margin_bottom = 160.5
+rect_scale = Vector2( 0.289975, 0.376163 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F2C2"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F3C2" type="Button" parent="."]
+margin_left = 39.1005
+margin_top = 159.0
+margin_right = 109.101
+margin_bottom = 185.0
+rect_scale = Vector2( 0.286609, 0.370427 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F3C2"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F4C2" type="Button" parent="."]
+margin_left = 39.1005
+margin_top = 187.0
+margin_right = 109.101
+margin_bottom = 213.0
+rect_scale = Vector2( 0.282131, 0.353565 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F4C2"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F5C2" type="Button" parent="."]
+margin_left = 39.1005
+margin_top = 215.0
+margin_right = 109.101
+margin_bottom = 241.0
+rect_scale = Vector2( 0.287006, 0.342529 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F5C2"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F1C3" type="Button" parent="."]
+margin_left = 62.301
+margin_top = 106.5
+margin_right = 132.301
+margin_bottom = 132.5
+rect_scale = Vector2( 0.278943, 0.380944 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F1C3"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F2C3" type="Button" parent="."]
+margin_left = 62.301
+margin_top = 134.5
+margin_right = 132.301
+margin_bottom = 160.5
+rect_scale = Vector2( 0.289417, 0.343936 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F2C3"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F3C3" type="Button" parent="."]
+margin_left = 62.301
+margin_top = 159.0
+margin_right = 132.301
+margin_bottom = 185.0
+rect_scale = Vector2( 0.279439, 0.337647 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F3C3"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F4C3" type="Button" parent="."]
+margin_left = 62.301
+margin_top = 187.0
+margin_right = 132.301
+margin_bottom = 213.0
+rect_scale = Vector2( 0.274076, 0.354291 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F4C3"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F5C3" type="Button" parent="."]
+margin_left = 62.301
+margin_top = 215.0
+margin_right = 132.301
+margin_bottom = 241.0
+rect_scale = Vector2( 0.279515, 0.390093 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F5C3"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F1C4" type="Button" parent="."]
+margin_left = 86.0
+margin_top = 107.0
+margin_right = 156.0
+margin_bottom = 133.0
+rect_scale = Vector2( 0.272725, 0.351371 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F1C4"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F2C4" type="Button" parent="."]
+margin_left = 85.5015
+margin_top = 134.5
+margin_right = 155.501
+margin_bottom = 160.5
+rect_scale = Vector2( 0.272725, 0.349703 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F2C4"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F3C4" type="Button" parent="."]
+margin_left = 85.5015
+margin_top = 159.0
+margin_right = 155.501
+margin_bottom = 185.0
+rect_scale = Vector2( 0.266463, 0.329514 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F3C4"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F4C4" type="Button" parent="."]
+margin_left = 85.5015
+margin_top = 187.0
+margin_right = 155.501
+margin_bottom = 213.0
+rect_scale = Vector2( 0.271382, 0.353565 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F4C4"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F5C4" type="Button" parent="."]
+margin_left = 85.5015
+margin_top = 215.0
+margin_right = 155.501
+margin_bottom = 241.0
+rect_scale = Vector2( 0.2766, 0.367288 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F5C4"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F1C5" type="Button" parent="."]
+margin_left = 108.702
+margin_top = 106.5
+margin_right = 178.702
+margin_bottom = 132.5
+rect_scale = Vector2( 0.263233, 0.325581 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F1C5"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F2C5" type="Button" parent="."]
+margin_left = 108.702
+margin_top = 134.5
+margin_right = 178.702
+margin_bottom = 160.5
+rect_scale = Vector2( 0.256252, 0.344298 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F2C5"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F3C5" type="Button" parent="."]
+margin_left = 108.702
+margin_top = 159.0
+margin_right = 178.702
+margin_bottom = 185.0
+rect_scale = Vector2( 0.267074, 0.355883 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F3C5"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F4C5" type="Button" parent="."]
+margin_left = 108.702
+margin_top = 187.0
+margin_right = 178.702
+margin_bottom = 213.0
+rect_scale = Vector2( 0.2592, 0.321581 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F4C5"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="F5C5" type="Button" parent="."]
+margin_left = 108.702
+margin_top = 215.0
+margin_right = 178.702
+margin_bottom = 241.0
+rect_scale = Vector2( 0.26171, 0.347432 )
+focus_mode = 1
+custom_colors/font_color_disabled = Color( 0.956863, 0.952941, 0.952941, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.478431, 0.203922, 1 )
+custom_fonts/font = SubResource( 2 )
+enabled_focus_mode = 1
+keep_pressed_outside = true
+text = "F5C5"
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+
+[node name="visto2" type="Sprite" parent="."]
+visible = false
+position = Vector2( -40, 61 )
+scale = Vector2( 0.026, 0.03 )
+texture = ExtResource( 7 )
+
+[node name="visto3" type="Sprite" parent="."]
+visible = false
+position = Vector2( -66, 44 )
+scale = Vector2( 0.026, 0.03 )
+texture = ExtResource( 7 )
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 90.0
+margin_top = 78.0
+margin_right = 158.0
+margin_bottom = 101.0
+rect_scale = Vector2( 0.59805, 0.654467 )
+custom_fonts/font = SubResource( 3 )
+text = "Aceptar"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[connection signal="pressed" from="F1C1" to="." method="_on_F1C1_pressed"]
+[connection signal="pressed" from="F1C2" to="." method="_on_F1C2_pressed"]
+[connection signal="pressed" from="F3C1" to="." method="_on_F3C1_pressed"]
+[connection signal="pressed" from="F4C1" to="." method="_on_F4C1_pressed"]
+[connection signal="pressed" from="F5C1" to="." method="_on_F5C1_pressed"]
+[connection signal="pressed" from="F2C1" to="." method="_on_F2C1_pressed"]
+[connection signal="pressed" from="F2C2" to="." method="_on_F2C2_pressed"]
+[connection signal="pressed" from="F3C2" to="." method="_on_F3C2_pressed"]
+[connection signal="pressed" from="F4C2" to="." method="_on_F4C2_pressed"]
+[connection signal="pressed" from="F5C2" to="." method="_on_F5C2_pressed"]
+[connection signal="pressed" from="F1C3" to="." method="_on_F1C3_pressed"]
+[connection signal="pressed" from="F2C3" to="." method="_on_F2C3_pressed"]
+[connection signal="pressed" from="F3C3" to="." method="_on_F3C3_pressed"]
+[connection signal="pressed" from="F4C3" to="." method="_on_F4C3_pressed"]
+[connection signal="pressed" from="F5C3" to="." method="_on_F5C3_pressed"]
+[connection signal="pressed" from="F1C4" to="." method="_on_F1C4_pressed"]
+[connection signal="pressed" from="F2C4" to="." method="_on_F2C4_pressed"]
+[connection signal="pressed" from="F3C4" to="." method="_on_F3C4_pressed"]
+[connection signal="pressed" from="F4C4" to="." method="_on_F4C4_pressed"]
+[connection signal="pressed" from="F5C4" to="." method="_on_F5C4_pressed"]
+[connection signal="pressed" from="F1C5" to="." method="_on_F1C5_pressed"]
+[connection signal="pressed" from="F2C5" to="." method="_on_F2C5_pressed"]
+[connection signal="pressed" from="F3C5" to="." method="_on_F3C5_pressed"]
+[connection signal="pressed" from="F4C5" to="." method="_on_F4C5_pressed"]
+[connection signal="pressed" from="F5C5" to="." method="_on_F5C5_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
